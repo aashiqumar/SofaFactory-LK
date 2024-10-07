@@ -1,0 +1,24 @@
+<!-- products/templates/common/navbar.html -->
+<nav class="custom-navbar navbar navbar-expand-md navbar-dark bg-dark" aria-label="Sofa Factory navigation bar">
+    <div class="container">
+        <a class="navbar-brand" href="{% url 'index' %}">Sofa Factory<span>.</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsSofaFactory" aria-controls="navbarsSofaFactory" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarsSofaFactory">
+            <ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
+                <li class="nav-item {% if current_url == 'index' %}active{% endif %}">
+                    <a class="nav-link" href="{% url 'index' %}">Home</a>
+                </li>
+                <li class="nav-item {% if current_url == 'furniture' %}active{% endif %}">
+                    <a class="nav-link" href="{% url 'furniture' %}">Furnitures</a></li>
+                <li class="nav-item {% if current_url == 'services' %}active{% endif %}">
+                    <a class="nav-link" href="{% url 'services' %}">Interior Design Services</a></li>
+                <li class="nav-item {% if current_url == 'blog' %}active{% endif %}">
+                    <a class="nav-link" href="{% url 'blog' %}">Blog</a></li>
+                <li class="nav-item {% if current_url == 'contact' %}active{% endif %}">
+                    <a class="nav-link" href="{% url 'contact' %}">Contact us</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>

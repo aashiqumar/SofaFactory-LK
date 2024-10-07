@@ -1,0 +1,71 @@
+/* Custom CSS for Amazon-like design */
+
+.product-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.product-description {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.product-price {
+    font-size: 1.5rem;
+    color: #B12704; /* Amazon-like price color */
+    margin-bottom: 1rem;
+}
+
+.product-actions .btn {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1.2rem;
+}
+
+.product-actions .btn-primary {
+    background-color: #FF9900; /* Amazon-like button color */
+    border-color: #FF9900;
+}
+
+.product-actions .btn-secondary {
+    background-color: #E7E9EC;
+    border-color: #E7E9EC;
+    color: #111;
+}
+
+.service-contents p {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.service-contents i {
+    margin-right: 0.5rem;
+    color: #007bff;
+}
+
+.contact-heading {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #007bff;
+}
+
+.contact-card {
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+}
+
+.contact-card .card-title {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.contact-card .card-text {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.contact-card .btn {
+    width: 100%;
+    font-size: 1rem;
+}
