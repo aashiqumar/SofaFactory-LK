@@ -14,7 +14,8 @@ SECRET_KEY = os.getenv('SECRET_KEY', 'django-insecure-h^x7m2)y_^#v8+73qkzsy9g!@n
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.getenv('DEBUG', 'True') == 'True'
 
-ALLOWED_HOSTS = ['.vercel.app', '.now.sh', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['sofa-factory-lk.vercel.app', 'localhost', '127.0.0.1']
+
 
 # Application definition
 
@@ -64,13 +65,15 @@ WSGI_APPLICATION = 'sofa_factory.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'sf-common',
-        'USER': 'sf-common_owner',
-        'PASSWORD': 'DpJ2TbXcun4K',
-        'HOST': 'ep-round-salad-a51bj4p8.us-east-2.aws.neon.tech',
-        'PORT': 5432,
+        'NAME': os.getenv('DB_NAME', 'sf-common'),  # Set a default for local development
+        'USER': os.getenv('DB_USER', 'sf-common_owner'),
+        'PASSWORD': os.getenv('DB_PASSWORD', 'DpJ2TbXcun4K'),
+        'HOST': os.getenv('DB_HOST', 'ep-round-salad-a51bj4p8.us-east-2.aws.neon.tech'),
+        'PORT': os.getenv('DB_PORT', '5432'),
     }
 }
+
+
 # Password validation
 AUTH_PASSWORD_VALIDATORS = [
     {
