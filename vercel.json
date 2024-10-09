@@ -11,5 +11,8 @@
       "src": "/(.*)",
       "dest": "sofa_factory/wsgi.py"
     }
-  ]
+  ],
+  "env": {
+    "DJANGO_SETTINGS_MODULE": "sofa_factory.settings"
+  }
 }
