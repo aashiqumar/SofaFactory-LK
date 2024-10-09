@@ -15,6 +15,9 @@ urlpatterns = [
     path('about/', views.about, name='about'),
     path('products/furniture/', views.product_list, name='furniture'),
     path('product/<int:id>/',  views.product_detail, name='product_detail'),
+    path('blog/<int:id>/', views.blog_detail, name='blog_detail'),
+    path('blog/category/<int:id>/', views.blog_category, name='blog_category'),
+
 ]
 
 if settings.DEBUG:

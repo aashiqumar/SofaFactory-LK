@@ -1,3 +1,4 @@
+# products/urls.py
 from django.urls import path
 from .views import index, product_list, services, product_detail, blog, blog_detail, blog_category
 

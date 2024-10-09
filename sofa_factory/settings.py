@@ -1,5 +1,6 @@
 from pathlib import Path
 import os
+from urllib.parse import urlparse
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -59,19 +60,17 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'sofa_factory.wsgi.application'
 
-# Database
-# Use PostgreSQL for production, replace this with your actual database credentials
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',  # Switch to PostgreSQL
-        'NAME': os.getenv('DB_NAME'),
-        'USER': os.getenv('DB_USER'),
-        'PASSWORD': os.getenv('DB_PASSWORD'),
-        'HOST': os.getenv('DB_HOST'),
-        'PORT': os.getenv('DB_PORT', '5432'),
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'sf-common',
+        'USER': 'sf-common_owner',
+        'PASSWORD': 'DpJ2TbXcun4K',
+        'HOST': 'ep-round-salad-a51bj4p8.us-east-2.aws.neon.tech',
+        'PORT': 5432,
     }
 }
-
 # Password validation
 AUTH_PASSWORD_VALIDATORS = [
     {

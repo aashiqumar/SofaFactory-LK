@@ -6,21 +6,22 @@
 * License: https://creativecommons.org/licenses/by/3.0/
 */ -->
 <!doctype html>
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="author" content="Drylest (PVT) LTD.">
-    <link rel="shortcut icon" href="favicon.png">
+    <link rel="shortcut icon" href="{% static 'images/favicon.png' %}">
 
     <meta name="description" content="" />
     <meta name="keywords" content="bootstrap, bootstrap4" />
 
     <!-- Bootstrap CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    <link href="css/tiny-slider.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="{% static 'css/tiny-slider.css' %}" rel="stylesheet">
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
     <title>Sofa Factory</title>
 </head>
 
@@ -38,12 +39,12 @@
                 <div class="intro-excerpt">
                     <h1>Contact Us</h1>
                     <p class="mb-4"></p>
-                    <p><a href="shop.html" class="btn btn-secondary me-2">Shop Now</a><a href="shop.html" class="btn btn-white-outline">Explore</a></p>
+
                 </div>
             </div>
             <div class="col-lg-7">
                 <div class="hero-img-wrap">
-                    <img src="images/couch.png" class="img-fluid">
+                    <img src="{% static 'images/couch.png' %}" class="img-fluid">
                 </div>
             </div>
         </div>
@@ -150,113 +151,13 @@
 
 
 <!-- Start Footer Section -->
-<footer class="footer-section">
-    <div class="container relative">
-
-        <div class="sofa-img">
-            <img src="images/sofa.png" alt="Image" class="img-fluid">
-        </div>
-
-        <div class="row">
-            <div class="col-lg-8">
-                <div class="subscription-form">
-                    <h3 class="d-flex align-items-center"><span class="me-1"><img src="images/envelope-outline.svg" alt="Image" class="img-fluid"></span><span>Subscribe to Newsletter</span></h3>
-
-                    <form action="#" class="row g-3">
-                        <div class="col-auto">
-                            <input type="text" class="form-control" placeholder="Enter your name">
-                        </div>
-                        <div class="col-auto">
-                            <input type="email" class="form-control" placeholder="Enter your email">
-                        </div>
-                        <div class="col-auto">
-                            <button class="btn btn-primary">
-                                <span class="fa fa-paper-plane"></span>
-                            </button>
-                        </div>
-                    </form>
-
-                </div>
-            </div>
-        </div>
-
-        <div class="row g-5 mb-5">
-            <div class="col-lg-4">
-                <div class="mb-4 footer-logo-wrap"><a href="#" class="footer-logo">Sofa Factory<span>.</span></a></div>
-                <p class="mb-4">Discover the epitome of comfort and style at Sofa Factory Outlet, your premier destination for high-quality sofas at unbeatable prices. As a leading sofa manufacturer, we take pride in offering a vast selection of handcrafted sofas that seamlessly blend design, durability, and affordability.</p>
-
-                <ul class="list-unstyled custom-social">
-                    <li><a href="https://www.facebook.com/sofafactoryoutlet.lk/"><span class="fa fa-brands fa-facebook-f"></span></a></li>
-                    <li><a href="https://www.instagram.com/sofa_factory_outlet/?hl=en"><span class="fa fa-brands fa-instagram">
-							<li><a href="https://tiktok.com/@sofa_factory_outlet"><span class="fa fa-brands fa-tiktok"></span></a></li>
-                </ul>
-            </div>
-
-            <div class="col-lg-8">
-                <div class="row links-wrap">
-                    <div class="col-6 col-sm-6 col-md-3">
-                        <ul class="list-unstyled">
-                            <li><a href="#">About us</a></li>
-                            <li><a href="#">Services</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Contact us</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="col-6 col-sm-6 col-md-3">
-                        <ul class="list-unstyled">
-                            <li><a href="#">Support</a></li>
-                            <li><a href="#">Knowledge base</a></li>
-                            <li><a href="#">Live chat</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="col-6 col-sm-6 col-md-3">
-                        <ul class="list-unstyled">
-                            <li><a href="#">Jobs</a></li>
-                            <li><a href="#">Our team</a></li>
-                            <li><a href="#">Leadership</a></li>
-                            <li><a href="#">Privacy Policy</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="col-6 col-sm-6 col-md-3">
-                        <ul class="list-unstyled">
-                            <li><a href="#">Nordic Chair</a></li>
-                            <li><a href="#">Kruzo Aero</a></li>
-                            <li><a href="#">Ergonomic Chair</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="border-top copyright">
-            <div class="row pt-4">
-                <div class="col-lg-6">
-                    <p class="mb-2 text-center text-lg-start">Sofa Factory Outlet &copy;<script>document.write(new Date().getFullYear());</script>. All Rights Reserved. &mdash; Designed with love by <a href="https://Drylest (PVT) LTD.">Drylest (PVT) LTD.</a> <!-- License information: https://Drylest (PVT) LTD./license/ -->
-                    </p>
-                </div>
-
-                <div class="col-lg-6 text-center text-lg-end">
-                    <ul class="list-unstyled d-inline-flex ms-auto">
-                        <li class="me-4"><a href="#">Terms &amp; Conditions</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                    </ul>
-                </div>
-
-            </div>
-        </div>
-
-    </div>
-</footer>
+{% include 'common/footer.html' %}
 <!-- End Footer Section -->
 
 
-<script src="js/bootstrap.bundle.min.js"></script>
-<script src="js/tiny-slider.js"></script>
-<script src="js/custom.js"></script>
+<script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+<script src="{% static 'js/tiny-slider.js' %}"></script>
+<script src="{% static 'js/custom.js' %}"></script>
 </body>
 
 </html>
