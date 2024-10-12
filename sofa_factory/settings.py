@@ -14,7 +14,7 @@ SECRET_KEY = os.getenv('SECRET_KEY', 'django-insecure-h^x7m2)y_^#v8+73qkzsy9g!@n
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.getenv('DEBUG', 'True') == 'True'
 
-ALLOWED_HOSTS = ['sofa-factory-lk.vercel.app', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['sofa-factory-lk.vercel.app', 'sofafactory.lk', 'www.sofafactory.lk', 'sofafactoryoutlet.lk', 'www.sofafactoryoutlet.lk', 'localhost', '127.0.0.1']
 
 
 # Application definition
